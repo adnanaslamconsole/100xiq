@@ -6,7 +6,7 @@ export const COMPANY = {
   tagline: "Turn attention into revenue.",
   description:
     "100xiq is the growth ecosystem behind ambitious brands. We engineer marketing systems that compound traffic, leads, and revenue — without the agency bloat.",
-  email: "contac@100xiq.com",
+  email: "contact@100xiq.com",
   phone: "+91-7897773335",
   phoneDisplay: "+91 78977 73335",
   address: {
@@ -24,6 +24,20 @@ export const COMPANY = {
     youtube: "https://youtube.com/@100xiq",
   },
   url: "https://100xiq.com",
+  logo: "/og/home.jpg",
+  defaultLocale: "en-US",
+  locales: [
+    "en-US",
+    "en-GB",
+    "en-IN",
+    "fr-FR",
+    "de-DE",
+    "es-ES",
+    "pt-BR",
+    "nl-NL",
+    "sv-SE",
+    "x-default",
+  ],
 };
 
 export const SERVICES = [

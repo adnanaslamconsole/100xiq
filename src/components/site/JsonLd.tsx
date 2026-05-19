@@ -23,6 +23,7 @@ export function JsonLd({ faq = false, webSite = false, faqs, reviews }: Props) {
     email: COMPANY.email,
     telephone: COMPANY.phone,
     description: COMPANY.description,
+    logo: `${COMPANY.url}${COMPANY.logo || "/og/home.jpg"}`,
     address: {
       "@type": "PostalAddress",
       streetAddress: COMPANY.address.street,
@@ -42,6 +43,7 @@ export function JsonLd({ faq = false, webSite = false, faqs, reviews }: Props) {
       },
     ],
     sameAs: Object.values(COMPANY.social),
+    areaServed: "Worldwide",
   };
 
   if (reviewList && reviewList.length) {

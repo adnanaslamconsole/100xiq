@@ -89,6 +89,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "image/svg+xml",
         href: "/favicon.svg",
       },
+      // hreflang alternates for primary locales
+      { rel: "alternate", href: "https://100xiq.com/", hreflang: "x-default" },
+      { rel: "alternate", href: "https://100xiq.com/", hreflang: "en-US" },
+      { rel: "alternate", href: "https://100xiq.com/", hreflang: "en-GB" },
+      { rel: "alternate", href: "https://100xiq.com/", hreflang: "en-IN" },
+      { rel: "alternate", href: "https://100xiq.com/fr/", hreflang: "fr-FR" },
+      { rel: "alternate", href: "https://100xiq.com/de/", hreflang: "de-DE" },
+      { rel: "alternate", href: "https://100xiq.com/es/", hreflang: "es-ES" },
       {
         rel: "stylesheet",
         href: appCss,
