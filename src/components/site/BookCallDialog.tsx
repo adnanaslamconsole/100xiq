@@ -318,7 +318,7 @@ export function BookCallProvider({ children }: { children: ReactNode }) {
                         onChange={(e) => update("name", e.target.value)}
                         autoComplete="name"
                         className={inputCls}
-                        placeholder="Priya Mehta"
+                        placeholder="Enter your name"
                       />
                     </Field>
                     <Field label="Work email *" error={errors.email}>
@@ -328,7 +328,7 @@ export function BookCallProvider({ children }: { children: ReactNode }) {
                         onChange={(e) => update("email", e.target.value)}
                         autoComplete="email"
                         className={inputCls}
-                        placeholder="priya@brand.com"
+                        placeholder="Enter your email"
                       />
                     </Field>
                     <Field label="Company">
@@ -337,7 +337,7 @@ export function BookCallProvider({ children }: { children: ReactNode }) {
                         onChange={(e) => update("company", e.target.value)}
                         autoComplete="organization"
                         className={inputCls}
-                        placeholder="Aurora Atelier"
+                        placeholder="Enter company name"
                       />
                     </Field>
                     <Field label="Website" error={errors.website}>
@@ -346,7 +346,7 @@ export function BookCallProvider({ children }: { children: ReactNode }) {
                         onChange={(e) => update("website", e.target.value)}
                         autoComplete="url"
                         className={inputCls}
-                        placeholder="auroraatelier.com"
+                        placeholder="Enter website"
                       />
                     </Field>
                     <Field label="Monthly budget" className="sm:col-span-2">
@@ -369,7 +369,7 @@ export function BookCallProvider({ children }: { children: ReactNode }) {
                         onChange={(e) => update("message", e.target.value)}
                         rows={3}
                         className={`${inputCls} resize-none`}
-                        placeholder="Eg. We're at $400K MRR, want to break $2M in 12 months."
+                        placeholder="Eg. Wea are at $100K MRR, want to break $500k in 6 months."
                       />
                     </Field>
                   </div>

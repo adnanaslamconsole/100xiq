@@ -170,7 +170,7 @@ export const CASE_STUDIES = [
     quote: {
       text:
         "100xiq didn't just run our ads — they rebuilt the way we think about growth. We went from praying for a good month to forecasting growth quarter by quarter.",
-      author: "Priya Mehta",
+      author: "Hanyu",
       role: "CEO, Aurora Atelier",
     },
     ogImage: "/og/aurora-atelier.jpg",
@@ -302,7 +302,7 @@ export const CASE_STUDIES = [
 export const TESTIMONIALS = [
   { quote: "100xiq replaced four agencies and 10x'd our pipeline in a single quarter. The closest thing to magic I've seen in 12 years of marketing.", name: "Sara Lindqvist", role: "CMO, Helix Cloud", rating: 5 },
   { quote: "We thought our growth was plateaued. Their AI engine found leverage we didn't know existed. Revenue is up 312% YoY.", name: "Marcus Chen", role: "Founder, Aurora Atelier", rating: 5 },
-  { quote: "Cinematic creative, surgical paid, and SEO that compounds. Every dollar feels like it works ten.", name: "Priya Nair", role: "VP Growth, Vertex Market", rating: 5 },
+  { quote: "Cinematic creative, surgical paid, and SEO that compounds. Every dollar feels like it works ten.", name: "Hanyu", role: "VP Growth, Vertex Market", rating: 5 },
   { quote: "It's not an agency. It's a growth operating system. We can't imagine scaling without them.", name: "Jonas Weber", role: "CEO, Quanta AI", rating: 5 },
   { quote: "Our CAC dropped 54% while LTV doubled. They are operators, not just marketers.", name: "Amelia Rossi", role: "CRO, Lumen Labs", rating: 5 },
   { quote: "Three site-of-the-day wins, infinite leads. 100xiq is the unfair advantage.", name: "Devon Park", role: "Head of Brand, Obsidian", rating: 5 },
