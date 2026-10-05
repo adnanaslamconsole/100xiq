@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ShravastiRouteImport } from './routes/shravasti'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as PricingRouteImport } from './routes/pricing'
@@ -22,6 +23,11 @@ import { Route as CaseSlugRouteImport } from './routes/case.$slug'
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShravastiRoute = ShravastiRouteImport.update({
+  id: '/shravasti',
+  path: '/shravasti',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -73,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/pricing': typeof PricingRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/services': typeof ServicesRoute
+  '/shravasti': typeof ShravastiRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/case/$slug': typeof CaseSlugRoute
 }
@@ -84,6 +91,7 @@ export interface FileRoutesByTo {
   '/pricing': typeof PricingRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/services': typeof ServicesRoute
+  '/shravasti': typeof ShravastiRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/case/$slug': typeof CaseSlugRoute
 }
@@ -96,6 +104,7 @@ export interface FileRoutesById {
   '/pricing': typeof PricingRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/services': typeof ServicesRoute
+  '/shravasti': typeof ShravastiRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/case/$slug': typeof CaseSlugRoute
 }
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/robots.txt'
     | '/services'
+    | '/shravasti'
     | '/sitemap.xml'
     | '/case/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -120,6 +130,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/robots.txt'
     | '/services'
+    | '/shravasti'
     | '/sitemap.xml'
     | '/case/$slug'
   id:
@@ -131,6 +142,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/robots.txt'
     | '/services'
+    | '/shravasti'
     | '/sitemap.xml'
     | '/case/$slug'
   fileRoutesById: FileRoutesById
@@ -143,6 +155,7 @@ export interface RootRouteChildren {
   PricingRoute: typeof PricingRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   ServicesRoute: typeof ServicesRoute
+  ShravastiRoute: typeof ShravastiRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   CaseSlugRoute: typeof CaseSlugRoute
 }
@@ -154,6 +167,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shravasti': {
+      id: '/shravasti'
+      path: '/shravasti'
+      fullPath: '/shravasti'
+      preLoaderRoute: typeof ShravastiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -223,6 +243,7 @@ const rootRouteChildren: RootRouteChildren = {
   PricingRoute: PricingRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   ServicesRoute: ServicesRoute,
+  ShravastiRoute: ShravastiRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   CaseSlugRoute: CaseSlugRoute,
 }

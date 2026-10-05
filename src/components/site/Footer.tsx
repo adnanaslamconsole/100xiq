@@ -43,10 +43,10 @@ export function Footer() {
             </p>
             <div className="mt-6 flex gap-3">
               {[
-                { s: "X", href: COMPANY.social.twitter },
-                { s: "IG", href: COMPANY.social.instagram },
+                // { s: "X", href: COMPANY.social.twitter },
+                // { s: "IG", href: COMPANY.social.instagram },
                 { s: "LI", href: COMPANY.social.linkedin },
-                { s: "YT", href: COMPANY.social.youtube },
+                // { s: "YT", href: COMPANY.social.youtube },
               ].map((s) => (
                 <a
                   key={s.s}
